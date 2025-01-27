@@ -65,3 +65,248 @@ footer {
   padding: 1rem;
   font-size: 0.875rem;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Scales font size */
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.logo .icon {
+  color: blue;
+  font-size: 1.25rem; /* Scales with font size */
+  margin-right: 0.5rem;
+}
+
+.logo .name {
+  font-weight: bold;
+  font-size: 1.125rem; /* Scales font size */
+  text-transform: uppercase;
+  margin-right: 0.3125rem;
+}
+
+.logo .role {
+  font-size: 0.875rem; /* Scales font size */
+  color: gray;
+}
+
+nav {
+  margin-right: 5%;
+  display: flex;
+  gap: 1.25rem; /* Scales with font size */
+}
+
+nav a:hover {
+  color: blue;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fdf6ed;
+}
+
+/* Profile Section */
+.profile {
+  flex: 1;
+  max-width: 30%; /* Adjusts with container size */
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #fdfafa;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  margin-left: 1.25rem;
+}
+
+.profile-pic {
+  width: 18.75rem; /* Adjusts with container size */
+  height: 18.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 3.125rem;
+}
+
+.role {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.linkedin {
+  display: inline-block;
+  margin-top: 0.625rem;
+  color: #0073e6;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Content Section */
+.content {
+  flex: 2;
+  max-width: 65%;
+}
+
+.content h1 {
+  font-size: 3rem; /* Adjusts with root font size */
+  margin-bottom: 0.625rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1.25rem;
+}
+
+.resume-btn {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+}
+
+.resume-btn:hover {
+  background-color: #005bb5;
+}
+
+.description, .experience {
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+section h2 {
+  font-size: 1.875rem;
+  font-family: 'Georgia', serif;
+  color: #333;
+  padding: 0 1.25rem;
+  margin-left: 1.25rem;
+}
+
+section p {
+  font-size: 1rem;
+  font-family: 'Verdana', sans-serif;
+  color: #555;
+  padding: 0 1.875rem;
+}
+
+.container-box {
+  width: 80%;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #f9f9f9;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.content-text {
+  flex: 2;
+}
+
+.content-text h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.content-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+}
+
+.content-video video {
+  max-width: 80%;
+  height: auto;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+}
+
+#contact {
+  padding: 2.5rem;
+  background-color: #f4f4f4;
+}
+
+.contact-wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-wrapper h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.25rem 0;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 0.625rem;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
