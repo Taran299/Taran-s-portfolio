@@ -3,19 +3,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f5f0;
+  background-color: #f9f5f0; /* Light beige background */
   color: #333;
-  line-height: 1.6;
-  font-size: 16px; /* Base font size */
 }
 
-/* Header */
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  padding: 1.25rem; /* 20px */
+  padding: 20px;
   background-color: #333;
   color: #fff;
 }
@@ -25,13 +22,13 @@ header .logo {
   align-items: center;
 }
 
-header nav {
-  display: flex;
-  gap: 1rem; /* 16px */
-  flex-wrap: wrap; /* Stack links vertically on small screens */
+header .logo .icon {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 header nav a {
+  margin-left: 15px;
   color: #fff;
   text-decoration: none;
 }
@@ -40,155 +37,150 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Container */
-.container {
-  padding: 1.5rem; /* 24px */
-  max-width: 75rem; /* 1200px */
-  margin: 0 auto;
+/* Logo Styles */
+.logo .icon {
+  color: blue;
+  font-size: 20px;
+  margin-right: 8px;
 }
 
-/* Content Wrapper */
-.content-wrapper {
+.logo .name {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.logo .role {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Navigation */
+nav {
+  margin-right: 5%;
   display: flex;
-  flex-wrap: wrap; /* Wrap content on smaller screens */
-  gap: 1.25rem; /* 20px */
-  background-color: #fff;
-  padding: 2.5rem; /* 40px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
-  margin-top: 1.25rem; /* 20px */
+  gap: 20px;
 }
 
-.content-text {
-  flex: 2;
-  min-width: 18.75rem; /* 300px */
-}
-
-.content-text h3 {
-  margin-top: 0;
-  font-size: 1.5rem; /* 24px */
-  color: #333;
-}
-
-.content-text p {
-  font-size: 1rem; /* 16px */
-  color: #555;
-}
-
-.content-image,
-.content-video {
-  flex: 1;
-  min-width: 18.75rem; /* 300px */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-image img,
-.content-video video {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem; /* 8px */
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* 4px 6px */
+nav a:hover {
+  color: blue;
 }
 
 /* Profile Section */
 .profile {
   flex: 1;
-  max-width: 100%; /* Full width on smaller screens */
+  max-width: 30%;
   text-align: center;
-  padding: 1.25rem; /* 20px */
+  padding: 20px;
   background-color: #fdfafa;
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); /* 4px 6px */
-  margin: 1.25rem 0; /* 20px */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
 }
 
 .profile-pic {
-  width: 9.375rem; /* 150px */
-  height: 9.375rem; /* 150px */
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.9375rem; /* 15px */
+  margin-bottom: 50px;
 }
 
-/* Contact Section */
-#contact {
-  padding: 2.5rem; /* 40px */
-  background-color: #f4f4f4;
+.role {
+  font-size: 1.2em;
+  color: #666;
 }
 
-.contact-wrapper {
-  max-width: 50rem; /* 800px */
-  margin: 0 auto;
+.linkedin {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0073e6;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Content Section */
+.content-wrapper {
+  display: flex; /* Horizontal layout for image and text */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between image and text */
+  margin-top: 20px;
+  background-color: #fff; /* White background */
+  padding: 40px; /* Increase padding for more space inside */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  width: 90%; /* Adjust width to occupy more space */
+  max-width: 1200px; /* Limit the maximum width */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+.content-text h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.content-image img {
+  max-width: 600px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Form Section */
+form {
   background-color: #fff;
-  padding: 1.25rem; /* 20px */
-  border-radius: 0.5rem; /* 8px */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact-wrapper h2 {
-  font-size: 1.75rem; /* 28px */
-  margin-bottom: 1.25rem; /* 20px */
-  text-align: center;
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005bb5;
 }
 
 /* Footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 1.25rem 0; /* 20px */
+  padding: 20px 0;
   text-align: center;
 }
 
 .footer-content {
-  max-width: 50rem; /* 800px */
-  margin: 0 auto;
-}
-
-.social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0.625rem 0; /* 10px */
-}
-
-.social-links li {
-  display: inline;
-  margin: 0 0.625rem; /* 10px */
-}
-
-.social-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-@media (max-width: 64rem) { /* 1024px */
-  .content-wrapper {
-    flex-direction: column; /* Stack content vertically */
-    padding: 1.25rem; /* 20px */
-  }
-
-  .content-text,
-  .content-image,
-  .content-video {
-    flex: 1;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 48rem) { /* 768px */
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile-pic {
-    width: 7.5rem; /* 120px */
-    height: 7.5rem;
-  }
-}
