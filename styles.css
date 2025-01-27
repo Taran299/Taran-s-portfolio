@@ -22,50 +22,14 @@
   max-width: 15rem; /* Limits max size */
   margin: 0 auto;
 }
-
-/* Content Section */
-.content {
-  flex: 1 1 100%; /* Takes full width on small screens */
-  max-width: 100%; /* Prevents overflow */
-  padding: 1rem;
-}
-
-/* Content Wrapper */
-.content-wrapper {
-  flex-direction: column; /* Stacks image and text vertically */
-  gap: 1rem; /* Adds space between items */
-}
-
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Scales font size */
+  }
   .container {
-    flex-direction: column; /* Stacks sections vertically */
-    gap: 1.5rem;
-  }
-
-  .profile, .content {
-    max-width: 100%; /* Full width for smaller screens */
-    margin: 0 auto;
-  }
-
-  .content-wrapper {
-    flex-direction: column; /* Stacks content vertically */
     padding: 1rem;
   }
-
-  .profile-pic {
-    width: 60%; /* Scales down for smaller screens */
-    max-width: 12rem;
-  }
 }
-
-/* Footer adjustments */
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.875rem;
-}
-
 
 body {
   margin: 0;
